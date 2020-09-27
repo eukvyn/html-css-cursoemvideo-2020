@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESTE</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            width: 100%;
+            background: black;
+            padding: 1rem 0;
+        }
+
+        .header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 900px;
+            margin: 0 auto;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+        }
+
+        .header nav a {
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            transition: 0.2s cubic-bezier(0.2, 1, 0.2, 1.4);
+        }
+
+        .header nav a:hover {
+            transform: scale(1.1);
+        }
+        
+        li {
+            list-style: none;
+            font-family: 'Poppins', sans-serif;
+            color: black;
+            font-size: 12px;
+            font-weight: 700;
+            background: #09d;
+            
+        }
+
+        a > ul {
+             display: none;
+         }
+
+         a:hover > ul {
+            display: block;
+            color: red;
+            background-color: lavender;
+         }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <a href="#">Site De Teste</a>
+            <a href="/">
+                Menu
+                <ul>
+                    <li> Item 1 </li>
+                    <li> Item 2</li>
+                </ul>
+            </a>
+        </nav>
+    </header>
+</body>
+</html>
